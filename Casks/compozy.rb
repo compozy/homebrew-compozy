@@ -2,7 +2,7 @@
 cask "compozy" do
   desc "Next-level Agentic Orchestration Platform"
   homepage "https://github.com/compozy/compozy"
-  version "0.0.4"
+  version "0.0.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,32 +12,30 @@ cask "compozy" do
 
   on_macos do
     on_intel do
-      url "https://github.com/compozy/compozy/releases/download/v0.0.4/compozy_0.0.4_darwin_x86_64.tar.gz"
-      sha256 "4a524d42a4ed7ce640dc9612e8d09e85da126c8020b768d39d92523b2ec83d94"
+      url "https://github.com/compozy/compozy/releases/download/v0.0.5/compozy_0.0.5_darwin_x86_64.tar.gz"
+      sha256 "ab01c6aed322f9106dc0a89476f22d975a7b9f6f6d857bb4e3fd31b0282ae580"
     end
     on_arm do
-      url "https://github.com/compozy/compozy/releases/download/v0.0.4/compozy_0.0.4_darwin_arm64.tar.gz"
-      sha256 "fb483c54a0a0278e43b30c700ad528923c0bbf3f360dffadfd9f3b8d6a63d77e"
+      url "https://github.com/compozy/compozy/releases/download/v0.0.5/compozy_0.0.5_darwin_arm64.tar.gz"
+      sha256 "0ffe319dea862d847e19427debe6a77747d6705a3018f0fe0d0ba16be010cd6e"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/compozy/compozy/releases/download/v0.0.4/compozy_0.0.4_linux_x86_64.tar.gz"
-      sha256 "e47532c800eb0697a5b81048981cda0cfb9eafef2590700d059778efa0dbb59d"
+      url "https://github.com/compozy/compozy/releases/download/v0.0.5/compozy_0.0.5_linux_x86_64.tar.gz"
+      sha256 "ea2eb12226c98cfb9a34dde44928db8b9f6815f88bb9bbb7cf934c1d1e82ad49"
     end
     on_arm do
-      url "https://github.com/compozy/compozy/releases/download/v0.0.4/compozy_0.0.4_linux_arm64.tar.gz"
-      sha256 "9b6dcf2694413522e2ce8c3f62d49e8627badbcb36aae167fe5175b7ba6db62d"
+      url "https://github.com/compozy/compozy/releases/download/v0.0.5/compozy_0.0.5_linux_arm64.tar.gz"
+      sha256 "423e11e93fb3680f6e95c408f64efbc60359c85ef66e1fbc96a20e02b9659b21"
     end
   end
 
   caveats do
     "To get started with Compozy, you need to:"
-    ""
     "1. Set up the required environment variables"
     "2. Configure your first workflow"
-    ""
     "See https://github.com/compozy/compozy for more information."
   end
 
