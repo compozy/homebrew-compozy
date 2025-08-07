@@ -2,7 +2,7 @@
 cask "compozy" do
   desc "Next-level Agentic Orchestration Platform"
   homepage "https://github.com/compozy/compozy"
-  version "0.0.9"
+  version "0.0.10"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "compozy" do
 
   on_macos do
     on_intel do
-      url "https://github.com/compozy/compozy/releases/download/v0.0.9/compozy_0.0.9_darwin_x86_64.tar.gz"
-      sha256 "336cf191f3a45b69e8260dd3ff547a84100ae010edad6d130f0fbf29b3b653a5"
+      url "https://github.com/compozy/compozy/releases/download/v0.0.10/compozy_0.0.10_darwin_x86_64.tar.gz"
+      sha256 "07d2f4c452ef25e60b1404200170db1c58cf18aff2dc245b8d4f4634525c8e6d"
     end
     on_arm do
-      url "https://github.com/compozy/compozy/releases/download/v0.0.9/compozy_0.0.9_darwin_arm64.tar.gz"
-      sha256 "6fa2a26475e3c9da6d13e750b6eb8f6f737d84c9ee9b9265329ac0bb0b2b62b3"
+      url "https://github.com/compozy/compozy/releases/download/v0.0.10/compozy_0.0.10_darwin_arm64.tar.gz"
+      sha256 "7a2046eacb39c08d93c2b9ae89ab9c62006b71f3586c3751838ae239fb176b7e"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/compozy/compozy/releases/download/v0.0.9/compozy_0.0.9_linux_x86_64.tar.gz"
-      sha256 "5d92cb8d492275a1959ebcaf8368223161bee2e217e05c297bb167dff0dc750b"
+      url "https://github.com/compozy/compozy/releases/download/v0.0.10/compozy_0.0.10_linux_x86_64.tar.gz"
+      sha256 "085a758cd0973eac59dbcf7af699914b74c58094729d6659095505dba42d9fc6"
     end
     on_arm do
-      url "https://github.com/compozy/compozy/releases/download/v0.0.9/compozy_0.0.9_linux_arm64.tar.gz"
-      sha256 "01e8bcd2d5058b571fdbeb351d26835f05e7a8df9043175ad4c95bbdc3bd7005"
+      url "https://github.com/compozy/compozy/releases/download/v0.0.10/compozy_0.0.10_linux_arm64.tar.gz"
+      sha256 "e599b51e16d6a4eba9768a3ffebde4ef465aab63ad91cedff3bcb0181bd310f2"
     end
   end
 
