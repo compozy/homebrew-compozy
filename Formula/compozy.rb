@@ -11,7 +11,7 @@ class Compozy < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/compozy/compozy/releases/download/v0.2.6/compozy_0.2.6_darwin_x86_64.tar.gz"
-      sha256 "1af4a06b7ad151ea4636883996fc155c0df44e3bc574f5311dd427d4f52b436d"
+      sha256 "6e2e57e6bea16cf0b47a47c94b4396acb3ec06e90623ed522e635962a900eafc"
 
       define_method(:install) do
         bin.install "compozy"
@@ -19,7 +19,7 @@ class Compozy < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/compozy/compozy/releases/download/v0.2.6/compozy_0.2.6_darwin_arm64.tar.gz"
-      sha256 "10d7e726d8afff976fbfcb5ffd1834eb8d38bfb718bf10cbfa4f6cf6c6038350"
+      sha256 "9cb53aa427e9fab1d32cb4dd02438e57467b6fc1674cd27aba0ca06447b148b0"
 
       define_method(:install) do
         bin.install "compozy"
@@ -30,14 +30,14 @@ class Compozy < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/compozy/compozy/releases/download/v0.2.6/compozy_0.2.6_linux_x86_64.tar.gz"
-      sha256 "e5f24c7854454dc8eb9dae54c75222d94563bf0e31e8895bb473c639052d2a39"
+      sha256 "ac70c779c404d1d07cb88068892799584f5ca58f7b7699af6d6a4e81d5b458de"
       define_method(:install) do
         bin.install "compozy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/compozy/compozy/releases/download/v0.2.6/compozy_0.2.6_linux_arm64.tar.gz"
-      sha256 "63e83a05af2c039613caaa6e92a312309155119d7f82a15494af36bd789a8910"
+      sha256 "0821a1ba666fb55d1799910ad84d8342838a2f6b3ebba3f6588e8ae3a64fcd7b"
       define_method(:install) do
         bin.install "compozy"
       end
