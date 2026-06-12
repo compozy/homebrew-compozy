@@ -5,21 +5,21 @@
 class Compozy < Formula
   desc "Compozy CLI"
   homepage "https://github.com/compozy/compozy"
-  version "0.2.7"
+  version "0.2.8"
   license "BSL-1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/compozy/compozy/releases/download/v0.2.7/compozy_0.2.7_darwin_x86_64.tar.gz"
-      sha256 "8349d2baa9f81bc42d57822cd7a62f0a948d048018ce942b36fda3dfd17c26ca"
+      url "https://github.com/compozy/compozy/releases/download/v0.2.8/compozy_0.2.8_darwin_x86_64.tar.gz"
+      sha256 "3e993ae11d51134a164f3c848eca63eec48c50312ae557660e96dfd33a5f858b"
 
       define_method(:install) do
         bin.install "compozy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/compozy/compozy/releases/download/v0.2.7/compozy_0.2.7_darwin_arm64.tar.gz"
-      sha256 "db523c0eef2b5cbbe0b80395bbf9608950acadaa1aa5371f964d4706416a1a40"
+      url "https://github.com/compozy/compozy/releases/download/v0.2.8/compozy_0.2.8_darwin_arm64.tar.gz"
+      sha256 "93d816955a2e36c647654c63a9969b26d40dbcef6ea0f06edbd4959e7ffc308d"
 
       define_method(:install) do
         bin.install "compozy"
@@ -29,15 +29,15 @@ class Compozy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/compozy/compozy/releases/download/v0.2.7/compozy_0.2.7_linux_x86_64.tar.gz"
-      sha256 "2a23f68eed9af9e87ad2cb3d6cf9edd9b0b2c652b3860f878ecf3ec60851113b"
+      url "https://github.com/compozy/compozy/releases/download/v0.2.8/compozy_0.2.8_linux_x86_64.tar.gz"
+      sha256 "cfa985f848da21a9e1fad9290fdef9c7d33bff2385b3a290b3cd2fe9617f4408"
       define_method(:install) do
         bin.install "compozy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/compozy/compozy/releases/download/v0.2.7/compozy_0.2.7_linux_arm64.tar.gz"
-      sha256 "372e69876db93313ed522b5355318a301c69654c8578cf274e0a5c9b0bd7b934"
+      url "https://github.com/compozy/compozy/releases/download/v0.2.8/compozy_0.2.8_linux_arm64.tar.gz"
+      sha256 "5ed011f4b268ce227fc80d5dd60b7b4792bd6ebf6f8b22c10e4d51f134eff5fb"
       define_method(:install) do
         bin.install "compozy"
       end
