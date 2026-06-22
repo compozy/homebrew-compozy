@@ -5,21 +5,21 @@
 class Agh < Formula
   desc "AGH — Artificial General Hivemind"
   homepage "https://agh.network"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/compozy/agh/releases/download/v0.0.7/agh_darwin_x86_64.tar.gz"
-      sha256 "ed5c2a6c04108f8e30ca9cd60b6422ca5c0667e05cee52d25cb995e7f925d597"
+      url "https://github.com/compozy/agh/releases/download/v0.0.8/agh_darwin_x86_64.tar.gz"
+      sha256 "778f087672c9255751ed4f759a8bc8f458ba9cda162f6acd452131d9028a7d28"
 
       define_method(:install) do
         bin.install "agh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/compozy/agh/releases/download/v0.0.7/agh_darwin_arm64.tar.gz"
-      sha256 "5ee6b6573cee247cffd6865494b500a0441ffb803c66eb53b70d766066af8a26"
+      url "https://github.com/compozy/agh/releases/download/v0.0.8/agh_darwin_arm64.tar.gz"
+      sha256 "2c0a16b94957d34fc557b6f010ddd73e08320504f93b94859c8363c8cc81869b"
 
       define_method(:install) do
         bin.install "agh"
@@ -29,15 +29,15 @@ class Agh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/compozy/agh/releases/download/v0.0.7/agh_linux_x86_64.tar.gz"
-      sha256 "6700af35a03d022492e12286e7b5d47916427f24f5cb7d5cea69a856553fd706"
+      url "https://github.com/compozy/agh/releases/download/v0.0.8/agh_linux_x86_64.tar.gz"
+      sha256 "fa646500a62c2e354d78943eb59c4b4597b292c144ff3d3c3bb1de1fe7416918"
       define_method(:install) do
         bin.install "agh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/compozy/agh/releases/download/v0.0.7/agh_linux_arm64.tar.gz"
-      sha256 "5b66853e669bb75cfeee91f2201c3e08619417159f2bb0583dca9ac956b3e662"
+      url "https://github.com/compozy/agh/releases/download/v0.0.8/agh_linux_arm64.tar.gz"
+      sha256 "c5484c9232b725b2ea17d9ec7315bde8333027f6aba68ce58ebe785396defbaf"
       define_method(:install) do
         bin.install "agh"
       end
