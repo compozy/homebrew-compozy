@@ -5,21 +5,21 @@
 class Compozy < Formula
   desc "Compozy CLI"
   homepage "https://github.com/compozy/compozy"
-  version "0.2.13"
+  version "0.2.14"
   license "BSL-1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/compozy/compozy/releases/download/v0.2.13/compozy_0.2.13_darwin_x86_64.tar.gz"
-      sha256 "002d4e00af2e9b05133fa2701f2a4167f09c0a4e1e9a95979e3e81fc5ac34d7c"
+      url "https://github.com/compozy/compozy/releases/download/v0.2.14/compozy_0.2.14_darwin_x86_64.tar.gz"
+      sha256 "95ad4584a343aba5f636f83479027c057e009594f5ea68a1bd43a5fdf7b39381"
 
       define_method(:install) do
         bin.install "compozy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/compozy/compozy/releases/download/v0.2.13/compozy_0.2.13_darwin_arm64.tar.gz"
-      sha256 "4a10523b761a08eb0abdacd11fe12aee0bc57e2f80fbfc6caa14e21c9af8e564"
+      url "https://github.com/compozy/compozy/releases/download/v0.2.14/compozy_0.2.14_darwin_arm64.tar.gz"
+      sha256 "24abdd31be423f1d32f74966ac4211055e922ead97ffcf4aec97fb4de39b85e5"
 
       define_method(:install) do
         bin.install "compozy"
@@ -29,15 +29,15 @@ class Compozy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/compozy/compozy/releases/download/v0.2.13/compozy_0.2.13_linux_x86_64.tar.gz"
-      sha256 "b1a13e411be8c5a86cf03862422ee9d4fb7c323bfce7870c5a6141ea7b6cf6cc"
+      url "https://github.com/compozy/compozy/releases/download/v0.2.14/compozy_0.2.14_linux_x86_64.tar.gz"
+      sha256 "cb85641833d653d90f8989a0cecd6ca91bbed75c1e510e5f0b8c9378a6a2389a"
       define_method(:install) do
         bin.install "compozy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/compozy/compozy/releases/download/v0.2.13/compozy_0.2.13_linux_arm64.tar.gz"
-      sha256 "735714168be0b507b89fe2a812db767bce35d19ffbbc35b64a7bfd06b3c42253"
+      url "https://github.com/compozy/compozy/releases/download/v0.2.14/compozy_0.2.14_linux_arm64.tar.gz"
+      sha256 "930d7bcdd378251dd82cf025f1a15b29f6f2ad39055d3ded9ede0f1aa748b643"
       define_method(:install) do
         bin.install "compozy"
       end
