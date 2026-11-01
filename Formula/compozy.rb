@@ -1,26 +1,26 @@
 class Compozy < Formula
   desc "Create, automate, and supervise agent work"
   homepage "https://compozy.com"
-  version "0.4.7"
+  version "0.4.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/compozy/compozy/releases/download/v0.4.7/compozy_darwin_arm64.tar.gz"
-      sha256 "404bcad4cd2f9421f1a515a4f4cfd60703f6e908d87ead22e30300768caa4ee1"
+      url "https://github.com/compozy/compozy/releases/download/v0.4.8/compozy_darwin_arm64.tar.gz"
+      sha256 "a1436b276ddd32c272133af753469f6d6c0761cac5fae12c940f09adfc5d8f6d"
     else
-      url "https://github.com/compozy/compozy/releases/download/v0.4.7/compozy_darwin_x86_64.tar.gz"
-      sha256 "15dceadb6ee00ef1831a8c4f3ed50858d45a0dd6f0001cdc928ae75e5bd47554"
+      url "https://github.com/compozy/compozy/releases/download/v0.4.8/compozy_darwin_x86_64.tar.gz"
+      sha256 "111745442eed6ea4abe63c505368632e82ebc5f42b7abfacc77448f2ff9b3387"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/compozy/compozy/releases/download/v0.4.7/compozy_linux_arm64.tar.gz"
-      sha256 "f9db3bf38b6eb57771b30a4959debce7d58960eb6cbe4ae5694bb7dc626efe91"
+      url "https://github.com/compozy/compozy/releases/download/v0.4.8/compozy_linux_arm64.tar.gz"
+      sha256 "6692accb8a6074e902d210435550ffc71c3c13f334f9ed8a2b543f2009d8a002"
     else
-      url "https://github.com/compozy/compozy/releases/download/v0.4.7/compozy_linux_x86_64.tar.gz"
-      sha256 "63eb4c9d2caa70f02e72bca68b0fe703a235eecb4e7287d8d67460b238c7b1e8"
+      url "https://github.com/compozy/compozy/releases/download/v0.4.8/compozy_linux_x86_64.tar.gz"
+      sha256 "3ad9207675cf19990d0cccbad276e298db241ee3f1f597e8e1d6b6a9ba7f61df"
     end
   end
 
